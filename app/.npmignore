@@ -1,0 +1,8 @@
+node_modules
+*.log
+.idea
+npm-debug.log
+jspm_
+
+# don't ignore .npmignore files
+!.npmignore
