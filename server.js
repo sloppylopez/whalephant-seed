@@ -18,6 +18,6 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(8080, function(){
-  console.log('Whalephant Node server listening on *:8080');
+http.listen(8082, function(){
+  console.log('Whalephant Node server listening on *:8082');
 });

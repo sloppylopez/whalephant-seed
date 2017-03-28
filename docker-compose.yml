@@ -4,7 +4,7 @@ services:
     image: jwilder/nginx-proxy
     container_name: nginx-container
     ports:
-      - 80:80
+      - 8081:8081
       - 443:443
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
@@ -18,7 +18,7 @@ services:
     command: node_modules/.bin/nodemon --debug=5858
     container_name: node-container
     ports:
-      - 8080:8080
+      - 8082:8082
       - 5858:5858
     volumes:
       - .:/home/whalephant
@@ -27,7 +27,7 @@ services:
       - nodemodules_server:/home/whalephant/node_modules
     environment:
       - VIRTUAL_HOST=docker.nginx.node.com
-      - VIRTUAL_PORT=8080
+      - VIRTUAL_PORT=8082
 
 volumes:
   nodemodules_server:
