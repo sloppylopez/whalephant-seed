@@ -3,7 +3,6 @@
   "ignore": [
     ".git",
     ".jspm",
-    ".config",
     ".*ignore",
     ".bash_history",
     "npm-shrinkwrap.json",
