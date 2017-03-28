@@ -14,9 +14,12 @@ RUN chown -R whalephant:whalephant $HOME/*
 
 USER whalephant
 WORKDIR $HOME
+
 RUN npm i &&\
-    cd app && npm i &&\
-    node_modules/.bin/jspm config registries.npm.timeouts.lookup 300 &&\
+    cd app &&\
+    npm i
+
+RUN node_modules/.bin/jspm config registries.npm.timeouts.lookup 300 &&\
     node_modules/.bin/jspm i --lock &&\
     ls -thrall
 
