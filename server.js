@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let http = require('http').Server(app);
-let io = require('socket.io')(http);
+// let io = require('socket.io')(http);
 app.use('/', express.static('app'));
 
 app.get('/', function(req, res){
@@ -12,12 +12,12 @@ app.get('/', function(req, res){
 //   res.sendFile(__dirname + '/app/chat.html');
 // });
 
-io.on('connection', function(socket){
-  socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
-  });
-});
+// io.on('connection', function(socket){
+//   socket.on('chat message', function(msg){
+//     io.emit('chat message', msg);
+//   });
+// });
 
-http.listen(8082, function(){
-  console.log('Whalephant Node server listening on *:8082');
+http.listen(8080, function(){
+  console.log('Whalephant Node server listening on *:8080');
 });
