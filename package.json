@@ -23,7 +23,8 @@
     "cache-clear": "bin/cache-clear",
     "lookup": "bin/lookup",
     "clean-tree": "bin/clean-tree",
-    "firebase:token": "firebase login:ci"
+    "firebase:token": "firebase login:ci",
+    "enter": "bin/enter-container"
   },
   "repository": {
     "type": "git",

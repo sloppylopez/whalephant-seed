@@ -1,0 +1,5 @@
+if [ "$(docker ps -qf "name=node-container")" == "" ]; then
+  echo "Docker container with image 'node-container' is not running, try running it first"
+else
+  docker exec -ti `bin/get-containerid-by-imagename` /bin/bash
+fi
