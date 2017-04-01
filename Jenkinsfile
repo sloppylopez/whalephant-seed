@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'ls -thrall',
-                sh 'pwd',
-                sh 'docker-compose up --build'
+                sh 'ls -thrall && pwd && docker-compose up --build'
             }
         }
         stage('Test'){
