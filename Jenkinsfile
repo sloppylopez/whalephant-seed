@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install Deps') {
             steps {
-                sh 'apt-get -y install docker-compose'
+                sh 'sudo apt-get -y install docker-compose'
             }
         }
         stage('Build') {
