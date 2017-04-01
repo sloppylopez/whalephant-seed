@@ -18,7 +18,7 @@ module.exports = {
   server: false,
   ui: {port: 3001, weinre: {port: 8083}},
   watchEvents: ['change'],
-  proxy: 'http://localhost:8080',
+  proxy: 'https://docker.nginx.node.com',
   port: 8081,
   middleware: false,
   serveStatic: [],

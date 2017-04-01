@@ -17,6 +17,7 @@
     "LICENSE",
     "*.yml",
     "Dockerfile"
+
   ],
   "verbose": true,
   "execMap": {
